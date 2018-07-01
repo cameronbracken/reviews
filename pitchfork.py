@@ -87,7 +87,7 @@ class Review(object):
     @error_value('')
     def album(self):
         """ Returns the album name. """
-        return self.soup.find(class_='review-title').get_text().strip()
+        return self.soup.find(class_='single-album-tombstone__review-title').get_text().strip()
 
     @error_value('')
     def label(self):
